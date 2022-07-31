@@ -2,7 +2,7 @@ const A = (linkName, linkUrl) => {
 	return (
 		<>
 			<a href={linkUrl} rel="noreferrer" target="_blank">
-				{linkName}{" "}
+				{linkName}
 			</a>
 		</>
 	);

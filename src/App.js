@@ -3,6 +3,8 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Publications from "./components/Publications";
 import Miscellaneous from "./components/Miscellaneous";
+import Current from "./components/Current";
+
 import Hr from "./components/Hr";
 
 const App = () => {
@@ -10,6 +12,8 @@ const App = () => {
 		<div className="p-0 sm:p-1 font-serif">
 			<Hr />
 			<Header />
+			<Hr />
+			<Current />
 			<Hr />
 			<Projects />
 			<Hr />
