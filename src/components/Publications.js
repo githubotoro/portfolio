@@ -1,4 +1,5 @@
 import A from "./A";
+import LearnMore from "./LearnMore";
 
 const Publications = () => {
 	const publicationsList = {
@@ -45,6 +46,8 @@ const Publications = () => {
 						<span className="font-normal">
 							{publicationsList.dambnft.series}
 						</span>
+						<br />
+						{LearnMore(`dambnft.html`)}
 					</div>
 				</div>
 			</>
@@ -76,6 +79,8 @@ const Publications = () => {
 						<span className="font-normal">
 							{publicationsList.scstnft.series}
 						</span>
+						<br />
+						{LearnMore(`scstnft.html`)}
 					</div>
 				</div>
 			</>
