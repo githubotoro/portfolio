@@ -4,6 +4,6 @@
 
 -   👀 Find me on-chain: **[0xD5a63CCE627372481b30AE24c31a3Fb94913D5Be](https://blockscan.com/address/0xD5a63CCE627372481b30AE24c31a3Fb94913D5Be)**
 -   📧 Reach me via: **uday.khokhariya@gmail.com**
--   🚢 Check out my ships: **[BuildSpace](https://buildspace.so/@yupuday)**
+-   🚢 Onboard my ships: **[BuildSpace](https://buildspace.so/@yupuday)**
 -   🧐 Hunt me on: **[ProductHunt](https://www.producthunt.com/@yupuday)**
 -   📡 Connect with me: **[Lens](https://www.lensfrens.xyz/yupuday.lens)** | **[Twitter](https://twitter.com/yupuday)** | **[LinkedIn](https://www.linkedin.com/in/yupuday/)**
