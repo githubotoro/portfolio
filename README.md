@@ -8,4 +8,4 @@
 -   🧐 Hunt me on: **[ProductHunt](https://www.producthunt.com/@yupuday)**
 -   📡 Connect with me: **[Lens](https://www.lensfrens.xyz/yupuday.lens)** | **[Twitter](https://twitter.com/yupuday)** | **[LinkedIn](https://www.linkedin.com/in/yupuday/)**
 
-> ### 📌 Note: **"No CSS was harmed in making this website!"**
+> #### 📌 Note: **No CSS was harmed in making this website!**
