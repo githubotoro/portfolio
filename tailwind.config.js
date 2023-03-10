@@ -7,10 +7,5 @@ module.exports = {
 	corePlugins: {
 		preflight: false,
 	},
-	theme: {
-		fontFamily: {
-			serif: ["Times New Roman"],
-		},
-	},
 	plugins: [],
 };

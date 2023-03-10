@@ -13,54 +13,22 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Hr from "./components/Hr";
 
 const App = () => {
-	const MainApp = () => {
-		return (
-			<>
-				<Hr />
-				<Header />
-				<Hr />
-				<Current />
-				<Hr />
-				<Projects />
-				<Hr />
-				<Publications />
-				<Hr />
-				<Contact />
-				<Hr />
-			</>
-		);
-	};
-
 	return (
-		<div className="p-0 sm:p-1 font-serif">
-			<BrowserRouter>
-				<Routes>
-					<Route
-						path="/"
-						element={
-							<>
-								<MainApp />
-							</>
-						}
-					/>
-					<Route
-						path="/dambnft.html"
-						element={
-							<>
-								<Dambnft />
-							</>
-						}
-					/>
-					<Route
-						path="/scstnft.html"
-						element={
-							<>
-								<Scstnft />
-							</>
-						}
-					/>
-				</Routes>
-			</BrowserRouter>
+		<div className="flex flex-col items-center place-content-center min-h-screen bg-gray-50 p-0 m-0">
+			<div
+				className="flex flex-col relative items-center font-semibold font-mono text-2xl bg-blue-500 text-gray-50 rounded-xl py-1 px-3
+			shadow-sm shadow-gray-300"
+			>
+				Upgrading to NextJS 13 -- will be back soon.
+				<div
+					className="z-20 absolute w-4 h-4 bg-green-500 top-0 right-0 -mt-1 -mr-1 rounded-full 
+				"
+				/>
+				<div
+					className="z-10 absolute w-4 h-4 bg-green-500 top-0 right-0 -mt-1 -mr-1 rounded-full animate-ping
+				"
+				/>
+			</div>
 		</div>
 	);
 };
