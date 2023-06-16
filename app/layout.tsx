@@ -97,6 +97,10 @@ export default function RootLayout({
 					{children}
 				</div>
 
+				<div className="font-serif w-full h-[20vw] md:h-[15vw] flex flex-col items-center text-[35vw] font-700 text-isWhite text-center overflow-hidden leading-none blur-[0.2rem] md:blur-[0.25rem]">
+					UDAY
+				</div>
+
 				<div
 					id="grains"
 					className="z-50 animated-grains fixed bg-opacity-50 isolate pointer-events-none bg-[url('/assets/grains.png')] backdrop-blur-[0.03rem]"
