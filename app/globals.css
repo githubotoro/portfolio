@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	@variants responsive {
+		/* Hide scrollbar for Chrome, Safari and Opera */
+		.no-scrollbar::-webkit-scrollbar {
+			display: none;
+		}
+
+		/* Hide scrollbar for IE, Edge and Firefox */
+		.no-scrollbar {
+			-ms-overflow-style: none; /* IE and Edge */
+			scrollbar-width: none; /* Firefox */
+		}
+	}
+}
+
+::-moz-selection {
+	/* Code for Firefox */
+	color: black;
+	background: white;
+}
+
+::selection {
+	color: black;
+	background: white;
+}
+
+.animated-grains {
+	width: 300%;
+	height: 300%;
+	left: -50%;
+	top: -100%;
+	animation: make-some-noise 5s steps(10) infinite;
+}
+
+@keyframes make-some-noise {
+	0%,
+	100% {
+		transform: translate(0, 0);
+	}
+	10% {
+		transform: translate(-5%, -10%);
+	}
+	20% {
+		transform: translate(-15%, 5%);
+	}
+	30% {
+		transform: translate(7%, -25%);
+	}
+	40% {
+		transform: translate(-5%, 25%);
+	}
+	50% {
+		transform: translate(-15%, 10%);
+	}
+	60% {
+		transform: translate(15%, 0%);
+	}
+	70% {
+		transform: translate(0%, 15%);
+	}
+	80% {
+		transform: translate(3%, 35%);
+	}
+	90% {
+		transform: translate(-10%, 10%);
+	}
+}
+
+@keyframes flickerAnimation {
+	0% {
+		-webkit-backdrop-filter: blur(0.01rem);
+		backdrop-filter: blur(0.01rem);
+	}
+	50% {
+		-webkit-backdrop-filter: blur(0.03rem);
+		backdrop-filter: blur(0.03rem);
+	}
+	100% {
+		-webkit-backdrop-filter: blur(0.01rem);
+		backdrop-filter: blur(0.01rem);
+	}
+}
+@-o-keyframes flickerAnimation {
+	0% {
+		-webkit-backdrop-filter: blur(0.01rem);
+		backdrop-filter: blur(0.01rem);
+	}
+	50% {
+		-webkit-backdrop-filter: blur(0.03rem);
+		backdrop-filter: blur(0.03rem);
+	}
+	100% {
+		-webkit-backdrop-filter: blur(0.01rem);
+		backdrop-filter: blur(0.01rem);
+	}
+}
+@-moz-keyframes flickerAnimation {
+	0% {
+		-webkit-backdrop-filter: blur(0.01rem);
+		backdrop-filter: blur(0.01rem);
+	}
+	50% {
+		-webkit-backdrop-filter: blur(0.03rem);
+		backdrop-filter: blur(0.03rem);
+	}
+	100% {
+		-webkit-backdrop-filter: blur(0.01rem);
+		backdrop-filter: blur(0.01rem);
+	}
+}
+@-webkit-keyframes flickerAnimation {
+	0% {
+		-webkit-backdrop-filter: blur(0.01rem);
+		backdrop-filter: blur(0.01rem);
+	}
+	50% {
+		-webkit-backdrop-filter: blur(0.03rem);
+		backdrop-filter: blur(0.03rem);
+	}
+	100% {
+		-webkit-backdrop-filter: blur(0.01rem);
+		backdrop-filter: blur(0.01rem);
+	}
+}
+.animate-flicker {
+	-webkit-animation: flickerAnimation 5s infinite;
+	-moz-animation: flickerAnimation 5s infinite;
+	-o-animation: flickerAnimation 5s infinite;
+	animation: flickerAnimation 5s infinite;
+}
