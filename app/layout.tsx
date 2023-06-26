@@ -85,14 +85,14 @@ export default function RootLayout({
 					signika.variable,
 					belgantAesthetic.variable,
 					spaceGrotesk.variable,
-					"font-sans font-400 text-md bg-isBlack/90 text-isRedDark w-full min-h-screen flex flex-col items-center"
+					"font-sans font-400 text-md bg-isBlack/90 text-isRedDark w-full min-h-screen flex flex-col items-center antialiased"
 				)}
 			>
 				<Navbar />
 
 				<div
 					id="mainContainer"
-					className="z-0 w-full max-w-screen-2xl p-2 flex flex-col items-center"
+					className="z-0 w-full max-w-screen-2xl p-2 flex flex-col items-center min-h-screen"
 				>
 					{children}
 				</div>
@@ -101,10 +101,10 @@ export default function RootLayout({
 					UDAY
 				</div>
 
-				<div
+				{/* <div
 					id="grains"
 					className="z-50 animated-grains fixed bg-opacity-50 isolate pointer-events-none bg-[url('/assets/grains.png')] backdrop-blur-[0.03rem]"
-				/>
+				/> */}
 
 				{/* <div
 					id="grains2"

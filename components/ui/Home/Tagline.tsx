@@ -40,7 +40,7 @@ export const Tagline = ({ props }: { props: string }) => {
 				<span className="blur-[0.1rem]">like</span>
 				<span
 					className={clsx(
-						"relative overflow-hidden mx-2 w-[2.4rem] h-[2.4rem] md:w-[4.8rem] md:h-[4.8rem] md:mx-5 rounded-lg md:rounded-2xl hover:blur-none hover:scale-[1.5] hover:rotate-6 group ",
+						"relative overflow-hidden mx-2 w-[2.4rem] h-[2.4rem] md:w-[4.8rem] md:h-[4.8rem] md:mx-5 rounded-lg md:rounded-2xl hover:blur-none hover:scale-[1.5] hover:rotate-6 group",
 						ANIMATE
 					)}
 				>
