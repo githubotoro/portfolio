@@ -1,9 +1,27 @@
 import clsx from "clsx";
 import { STRIKED, ANIMATE, HYPERLINK } from "./constants";
 import Link from "next/link";
+import React from "react";
+import { Hoverable } from "./store/Hoverable";
+import { LINK_ICON } from "./constants";
+import {
+	PaperplaneFill,
+	ArrowshapeTurnUpRightFill,
+	PlayFill,
+} from "./components/icons";
 
 export const useMDXComponents = () => {
 	return {
+		External: (props: any) => {
+			return <PaperplaneFill props={LINK_ICON} />;
+		},
+		Internal: (props: any) => {
+			return <ArrowshapeTurnUpRightFill props={LINK_ICON} />;
+		},
+		Gtfol: (props: any) => {
+			return <PlayFill props={LINK_ICON} />;
+		},
+
 		a: (props: any) => {
 			const href = props.href;
 
@@ -42,6 +60,12 @@ export const useMDXComponents = () => {
 				);
 			}
 		},
+
+		Hoverable: (props: any) => {
+			return (
+				<Hoverable display={props.children} hovertext={props.navtext} />
+			);
+		},
 		em: (props: any) => {
 			return <span className="italic" {...props} />;
 		},
@@ -57,7 +81,7 @@ export const useMDXComponents = () => {
 			return (
 				<div
 					className={clsx(
-						"ml-4 md:ml-8 before:content-['--_'] w-fit hover:bg-isSystemDarkSecondary"
+						"ml-4 md:ml-8 before:content-['--_'] w-fit hover:bg-isWhite/10 backdrop-blur-md"
 					)}
 					{...props}
 				/>
@@ -67,7 +91,7 @@ export const useMDXComponents = () => {
 			return <div className="" {...props} />;
 		},
 		Blur: (props: any) => {
-			return <span className="blur-[0.1rem]" />;
+			return <span className="blur-[0.1rem] " />;
 		},
 		Strike: (props: any) => {
 			return <span className={clsx(STRIKED)} {...props} />;
@@ -77,7 +101,7 @@ export const useMDXComponents = () => {
 				<span
 					{...props}
 					className={clsx(
-						"blur-[0.25rem] hover:blur-none text-isLabelDarkSecondary hover:bg-isBlack opacity-50 hover:opacity-100",
+						"blur-[0.25rem] bg-isBlack hover:blur-none text-isLabelDarkSecondary hover:bg-isBlack opacity-50 hover:opacity-100",
 						ANIMATE
 					)}
 				/>

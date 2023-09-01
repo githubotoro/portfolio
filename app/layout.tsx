@@ -97,9 +97,11 @@ export default function RootLayout({
 					{children}
 				</div>
 
-				<div className="font-serif w-full h-[20vw] md:h-[15vw] flex flex-col items-center text-[35vw] font-700 text-isWhite text-center overflow-hidden leading-none blur-[0.2rem] md:blur-[0.25rem]">
+				{/* <div className="font-serif w-full h-[15vw] flex flex-col items-center text-[35vw] font-700 text-isWhite text-center overflow-hidden leading-none blur-[0.2rem] md:blur-[0.25rem]">
 					UDAY
-				</div>
+				</div> */}
+
+				{/* <div className="fixed z-30 top-0 left-0 w-full h-full vignette" /> */}
 
 				{/* <div
 					id="grains"
@@ -111,8 +113,12 @@ export default function RootLayout({
 					className="z-50 animated-grains fixed bg-opacity-50 isolate pointer-events-none bg-[url('/assets/grains.png')] w-full h-full backdrop-blur-[0.03rem]"
 				/> */}
 
-				<div className="fixed z-30 top-0 h-1/3 bg-gradient-to-b from-isBlack to-transparent bg-opacity-50 w-full pointer-events-none" />
+				<div className="fixed z-30 top-0 h-2/5 bg-gradient-to-b from-isBlack to-transparent bg-opacity-50 w-full pointer-events-none" />
 				<div className="fixed z-50 bottom-0 h-1/3 bg-gradient-to-b from-transparent to-isBlack bg-opacity-50 w-full pointer-events-none" />
+
+				<div className="fixed bg-no-repeat bg-cover -z-10 top-0 h-full bg-[url('/assets/me/buildspace.png')] object-contain opacity-40 bg-center blur-xl w-full pointer-events-none" />
+
+				{/* <div className="fixed z-50 top-0 h-full bg-[url('/assets/gifs/explosion.gif')] object-contain opacity-5 blur-xl w-full pointer-events-none" /> */}
 			</body>
 		</html>
 	);

@@ -1,7 +1,11 @@
+"use client";
+
 import clsx from "clsx";
 import Link from "next/link";
 import { ANIMATE, STRIKED } from "@/constants";
 import AboutMe from "@/content/home/about-me.mdx";
+import { useStore } from "@/store";
+import { useEffect } from "react";
 
 export const Description = ({ props }: { props: string }) => {
 	return (

@@ -17,6 +17,10 @@
 	}
 }
 
+.vignette {
+	box-shadow: 0 0 12rem 5rem rgba(0, 0, 0, 0.9) inset;
+}
+
 ::-moz-selection {
 	/* Code for Firefox */
 	color: black;
