@@ -101,7 +101,7 @@ export const useMDXComponents = () => {
 				<span
 					{...props}
 					className={clsx(
-						"blur-[0.25rem] bg-isBlack hover:blur-none text-isLabelDarkSecondary hover:bg-isBlack opacity-50 hover:opacity-100",
+						"blur-[0.15rem] md:blur-[0.25rem] bg-isBlack hover:blur-none text-isLabelDarkSecondary hover:bg-isBlack opacity-50 hover:opacity-100",
 						ANIMATE
 					)}
 				/>
