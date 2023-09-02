@@ -22,7 +22,7 @@ export const NavHighlighter = () => {
 	return (
 		<div
 			className={clsx(
-				"w-fit max-w-sm h-fit flex flex-row items-center justify-between leading-none pt-[0.25rem] pb-[0.26rem] font-500 text-sm md:text-md px-[0.6rem] rounded-sm shadow-sm hover:bg-isSystemLightPrimary hover:text-isSystemDarkPrimary backdrop-blur-sm",
+				"w-fit max-w-sm h-fit flex flex-row items-center justify-between leading-none pt-[0.25rem] pb-[0.26rem] font-500 text-sm md:text-md px-[0.6rem] rounded-sm shadow-sm hover:bg-isSystemLightPrimary hover:text-isSystemDarkPrimary backdrop-blur-sm drop-shadow-sm",
 				ANIMATE,
 				navHighlight
 					? flashEffect
