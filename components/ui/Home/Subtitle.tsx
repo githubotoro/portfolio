@@ -9,14 +9,14 @@ export const Subtitle = ({ props }: { props: string }) => {
 				props
 			)}
 		>
-			<span className="text-isSystemLightSecondary text-center text-[0.6rem] md:text-xl tracking-wide italic font-300 ">
+			<span className="text-isSystemLightSecondary text-center text-[0.6rem] md:text-xl tracking-normal md:tracking-wide italic font-300 leading-snug md:leading-normal">
 				<_subtitle />
 			</span>
 
-			<div className="absolute text-isSystemLightSecondary -top-2 -left-5 md:-top-3 md:-left-11 text-xl md:text-6xl italic">
+			<div className="absolute text-isSystemLightSecondary/50 -top-2 -left-4 md:-top-3 md:-left-11 text-xl md:text-6xl italic font-800 md:font-300">
 				“
 			</div>
-			<div className="absolute text-isSystemLightSecondary top-2 -right-3 md:top-4 md:-right-7 text-xl md:text-6xl italic">
+			<div className="absolute text-isSystemLightSecondary/50 top-1 -right-3 md:top-4 md:-right-7 text-xl md:text-6xl italic font-800 md:font-300">
 				”
 			</div>
 		</div>
