@@ -18,8 +18,9 @@ export const Tagline = ({ props }: { props: string }) => {
 		>
 			<div className="w-full h-full backdrop-blur-md space-y-2">
 				<div className="flex flex-row items-center place-content-center ">
-					<span className={BLURRY}>I</span>&nbsp;
-					<span className={HIGHLIGHT}>ship</span>
+					<span className={HIGHLIGHT}>i</span>
+					{/* &nbsp; */}
+					{/* <span className={HIGHLIGHT}>ship</span> */}
 					<span
 						className={clsx(
 							"z-10 relative overflow-hidden mx-2 w-[4.8rem] h-[2.4rem] md:w-[9.6rem] md:h-[4.8rem] md:mx-5 rounded-md hover:blur-none hover:scale-[1.5] hover:rotate-6 group",

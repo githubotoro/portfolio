@@ -6,6 +6,8 @@ interface State {
 	resetNavtext: () => void;
 	navHighlight: any;
 	setNavHighlight: (navHighlight: any) => void;
+	flashEffect: any;
+	setFlashEffect: (flashEffect: any) => void;
 }
 
 const BASE_TEXT = "✤ my infinite garden ✤";
@@ -19,4 +21,6 @@ export const useStore = create<State>()((set) => ({
 		})),
 	navHighlight: false,
 	setNavHighlight: (navHighlight: any) => set({ navHighlight }),
+	flashEffect: false,
+	setFlashEffect: (flashEffect: any) => set({ flashEffect }),
 }));

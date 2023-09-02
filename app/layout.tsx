@@ -85,14 +85,14 @@ export default function RootLayout({
 					signika.variable,
 					belgantAesthetic.variable,
 					spaceGrotesk.variable,
-					"font-sans font-400 text-md bg-isBlack/90 text-isRedDark w-full min-h-screen flex flex-col items-center antialiased"
+					"font-sans font-400 text-md bg-isBlack/90 text-isLabelDarkSecondary/50 w-full min-h-screen flex flex-col items-center antialiased"
 				)}
 			>
 				<Navbar />
 
 				<div
 					id="mainContainer"
-					className="z-0 w-full max-w-screen-2xl p-2 flex flex-col items-center min-h-screen"
+					className="z-0 w-full max-w-screen-2xl p-2 flex flex-col items-center min-h-screen font-300 text-sm sm:text-md md:text-xl"
 				>
 					{children}
 				</div>
@@ -116,7 +116,7 @@ export default function RootLayout({
 				<div className="fixed z-30 top-0 h-2/5 bg-gradient-to-b from-isBlack to-transparent bg-opacity-50 w-full pointer-events-none" />
 				<div className="fixed z-50 bottom-0 h-1/3 bg-gradient-to-b from-transparent to-isBlack bg-opacity-50 w-full pointer-events-none" />
 
-				<div className="fixed bg-no-repeat bg-cover -z-10 top-0 h-full bg-[url('/assets/me/buildspace.png')] object-contain opacity-40 bg-center blur-xl w-full pointer-events-none" />
+				{/* <div className="fixed bg-no-repeat bg-cover -z-10 top-0 h-full bg-[url('/assets/me/buildspace.png')] object-contain opacity-40 bg-center blur-xl w-full pointer-events-none" /> */}
 
 				{/* <div className="fixed z-50 top-0 h-full bg-[url('/assets/gifs/explosion.gif')] object-contain opacity-5 blur-xl w-full pointer-events-none" /> */}
 			</body>

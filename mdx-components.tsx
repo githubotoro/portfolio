@@ -107,5 +107,69 @@ export const useMDXComponents = () => {
 				/>
 			);
 		},
+
+		Para: (props: any) => {
+			return (
+				<div className="static -mb-6 -ml-6 md:-mb-12 md:-ml-14 text-isSystemLightTertiary top-0 left-0 text-3xl md:text-7xl font-400">
+					¶
+				</div>
+			);
+		},
+		Section: (props: any) => {
+			return (
+				<div className="static -mb-7 -ml-6 md:-mb-[4.2rem] md:-ml-14 text-isSystemLightTertiary top-0 left-0 text-4xl md:text-8xl font-400">
+					§
+				</div>
+			);
+		},
+		Hash: (props: any) => {
+			return (
+				<div className="static -mb-6 -ml-6 md:-mb-12 md:-ml-14 text-isSystemLightTertiary top-0 left-0 text-3xl md:text-7xl font-400">
+					#
+				</div>
+			);
+		},
+		Phrase: (props: any) => {
+			return (
+				<div className="static -mb-6 -ml-6 md:-mb-12 md:-ml-14 text-isSystemLightTertiary top-0 left-0 text-3xl md:text-7xl font-400">
+					&amp;
+				</div>
+			);
+		},
+		At: (props: any) => {
+			return (
+				<div className="static -mb-6 -ml-7 md:-mb-12 md:-ml-[4.2rem] text-isSystemLightTertiary top-0 left-0 text-2xl md:text-6xl font-400">
+					@
+				</div>
+			);
+		},
+		Asterisk: (props: any) => {
+			return (
+				<div className="static -mb-9 -ml-7 md:-mb-[4.5rem] md:-ml-[3.6rem] text-isSystemLightTertiary top-0 left-0 text-5xl md:text-8xl font-400">
+					*
+				</div>
+			);
+		},
+		Question: (props: any) => {
+			return (
+				<div className="static -mb-7 -ml-6 md:-mb-16 md:-ml-[3.3rem] text-isSystemLightTertiary top-0 left-0 text-4xl md:text-8xl font-400">
+					?
+				</div>
+			);
+		},
+		StartQuotes: (props: any) => {
+			return (
+				<div className="static -mb-10 -ml-7 md:-mb-28 md:-ml-16 text-isSystemLightTertiary top-0 left-0 text-5xl md:text-9xl font-400">
+					“
+				</div>
+			);
+		},
+		EndQuotes: (props: any) => {
+			return (
+				<div className="static -mt-3 -mr-7 md:-mt-8 md:-mr-16 -mb-3 md:-mb-20 text-isSystemLightTertiary bottom-0 right-0 text-5xl md:text-9xl font-400 text-right">
+					”
+				</div>
+			);
+		},
 	};
 };
