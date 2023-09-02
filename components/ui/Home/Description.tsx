@@ -2,6 +2,6 @@
 
 import _description from "@/content/home/_description.mdx";
 
-export const Description = ({ props }: { props: string }) => {
+export const Description = () => {
 	return <_description />;
 };
