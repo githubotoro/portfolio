@@ -1,8 +1,7 @@
 import { ANIMATE } from "@/constants";
 import clsx from "clsx";
-
-import { useStore } from "@/store";
 import { useEffect } from "react";
+import { useStore } from "@/store";
 
 export const NavHighlighter = () => {
 	const { navHighlight, navtext, flashEffect, setFlashEffect } = useStore();

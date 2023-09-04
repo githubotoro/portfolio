@@ -6,7 +6,6 @@ import {
 	Twitter,
 	Linkedin,
 } from "@/components/icons";
-import clsx from "clsx";
 
 export const NAV_ITEMS = {
 	home: {
@@ -16,13 +15,13 @@ export const NAV_ITEMS = {
 	},
 	blogs: {
 		icon: MagazineFill,
-		navigate_to: "/blogs",
-		navtext: "yeah yeah, i write sometimes",
+		navigate_to: "",
+		navtext: "comin' soon",
 	},
 	contact: {
 		icon: EllipsisBubbleFill,
-		navigate_to: "/contact",
-		navtext: "what's your emergency?",
+		navigate_to: "",
+		navtext: "comin' soon",
 	},
 };
 
@@ -41,8 +40,8 @@ export const SOCIAL_ITEMS = {
 	},
 	twitter: {
 		icon: Twitter,
-		navigate_to: "/",
+		navigate_to: "https://twitter.com/@yupuday",
 		props: "fill-isSystemDarkTertiary hover:fill-isCyanLight !-ml-[0.15rem] !p-[0.25rem] sm:!p-[0.3rem] md:!p-[0.35rem]",
-		navtext: "https://twitter.com/@yupuday",
+		navtext: "twitter.com/@yupuday",
 	},
 };
