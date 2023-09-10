@@ -3,6 +3,7 @@ import { Signika, Space_Grotesk } from "next/font/google";
 import localFont from "next/font/local";
 import clsx from "clsx";
 import { Navbar } from "@/components/ui/Navbar";
+import { RightBar } from "@/components/ui/Sidebars";
 
 const signika = Signika({
 	subsets: ["latin"],
@@ -75,23 +76,32 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en" className="scroll-p-12 md:scroll-p-20">
+		<html lang="en" className="scroll-p-12 md:scroll-p-20 ">
 			<body
 				className={clsx(
 					signika.variable,
 					belgantAesthetic.variable,
 					spaceGrotesk.variable,
-					"font-sans font-400 text-md bg-isBlack/90 text-isLabelDarkSecondary/50 w-full min-h-screen flex flex-col items-center antialiased no-scrollbar"
+					"font-sans font-400 text-md bg-isBlack/90 text-isLabelDarkSecondary/50 w-full min-h-screen flex flex-col items-center antialiased no-scrollbar "
 				)}
 			>
 				<Navbar />
 
 				<div
 					id="mainContainer"
-					className="z-0 w-full max-w-screen-2xl p-2 flex flex-col items-center min-h-screen font-300 text-sm sm:text-md md:text-lg"
+					className="z-0 w-full max-w-screen-md p-2 flex flex-col items-center min-h-screen font-300 text-sm sm:text-md md:text-lg"
 				>
 					{children}
 				</div>
+
+				{/* SIDEBARS */}
+				{/* <div className="hidden xl:flex max-w-screen-xl flex-row w-full h-screen fixed pointer-events-none">
+					<div className="w-[256px]"></div>
+					<div className="w-full max-w-screen-md"></div>
+
+					<RightBar />
+				</div> */}
+				{/* SIDEBARS */}
 
 				{/* <div className="font-serif w-full h-[15vw] flex flex-col items-center text-[35vw] font-700 text-isWhite text-center overflow-hidden leading-none blur-[0.2rem] md:blur-[0.25rem]">
 					UDAY
